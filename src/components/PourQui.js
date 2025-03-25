@@ -18,7 +18,6 @@ export default function PourQui() {
       titre: "Relations & Comportements",
       items: [
         "Réactions disproportionnées face à des situations",
-        "Difficulté à trouver un partenaire",
         "Attirance systématique pour des personnes néfastes",
         "Difficultés à faire confiance",
         "Problèmes relationnels (famille, travail)",
@@ -38,7 +37,7 @@ export default function PourQui() {
     {
       titre: "Manifestations Corporelles",
       items: [
-        "Douleurs chroniques (cou, nuque, dos, chevilles)",
+        "Douleurs chroniques (sans explication médicale logique)",
         "Allergies, difficultés respiratoires",
         "Migraines, céphalées, maux de ventre",
         "Infections urinaires à répétition",

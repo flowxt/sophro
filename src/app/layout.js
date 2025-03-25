@@ -14,18 +14,18 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Sophro-Analyse & Thérapies en Haute-Savoie | Stéphanie Lassagne",
   description:
-    "Thérapeute en Sophro-Analyse, Constellations Familiales et Magnétisme à Annecy et en Haute-Savoie. Accompagnement personnalisé pour retrouver équilibre et bien-être.",
+    "Thérapeute en Sophro-Analyse, Constellations Familiales et Magnétisme à Allèves et en Haute-Savoie. Accompagnement personnalisé pour retrouver équilibre et bien-être.",
   keywords: [
     "sophro-analyse Haute-Savoie",
-    "sophro-analyse Annecy",
+    "sophro-analyse Allèves",
     "thérapeute Haute-Savoie",
-    "constellations familiales Annecy",
+    "constellations familiales Allèves",
     "magnétisme Haute-Savoie",
-    "bien-être Annecy",
+    "bien-être proche de Annecy",
     "thérapie brève Haute-Savoie",
     "Stéphanie Lassagne thérapeute",
     "thérapie holistique 74",
-    "équilibre émotionnel Annecy",
+    "équilibre émotionnel proche de Annecy",
     "accompagnement thérapeutique Haute-Savoie",
   ],
   openGraph: {

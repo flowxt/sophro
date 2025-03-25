@@ -46,8 +46,8 @@ export default function Cabinet() {
             </h2>
             <div className="w-20 h-1 bg-teal-500 mx-auto mb-6"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Un espace chaleureux et accueillant à Annecy pour vous accompagner
-              dans votre processus thérapeutique
+              Un espace chaleureux et accueillant à Allèves pour vous
+              accompagner dans votre processus thérapeutique
             </p>
           </div>
 

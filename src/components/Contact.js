@@ -66,7 +66,7 @@ export default function Contact() {
             </h2>
             <div className="w-20 h-1 bg-teal-500 mx-auto mb-6"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Pour toute question ou prise de rendez-vous à Annecy et ses
+              Pour toute question ou prise de rendez-vous à Allèves et ses
               environs, n'hésitez pas à me contacter. Je vous répondrai dans les
               meilleurs délais.
             </p>
@@ -108,8 +108,8 @@ export default function Contact() {
                       Adresse
                     </h4>
                     <p className="text-gray-600">
-                      Cabinet de Thérapies Stéphanie Lassagne, 123 Rue de la
-                      Sérénité, 74000 Annecy, Haute-Savoie
+                      Cabinet de Thérapies Stéphanie Lassagne, 417 route de
+                      Banges 74540 Allèves
                     </p>
                   </div>
                 </div>
@@ -135,7 +135,7 @@ export default function Contact() {
                     <h4 className="text-lg font-medium text-gray-800">
                       Téléphone
                     </h4>
-                    <p className="text-gray-600">06 XX XX XX XX</p>
+                    <p className="text-gray-600">06 50 09 56 62</p>
                   </div>
                 </div>
 
@@ -158,9 +158,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="text-lg font-medium text-gray-800">Email</h4>
-                    <p className="text-gray-600">
-                      stephanie@harmonie-et-sens.fr
-                    </p>
+                    <p className="text-gray-600">stlassagne.sa@gmail.com</p>
                   </div>
                 </div>
 

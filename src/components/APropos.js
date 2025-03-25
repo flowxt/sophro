@@ -38,9 +38,9 @@ export default function APropos() {
               </p>
 
               <p className="text-gray-700 mb-4">
-                Mon cabinet situé en Haute-Savoie, à Annecy, vous accueille dans
-                un espace chaleureux et bienveillant propice à la détente et à
-                l'introspection.
+                Mon cabinet situé en Haute-Savoie, à Allèves, vous accueille
+                dans un espace chaleureux et bienveillant propice à la détente
+                et à l'introspection.
               </p>
 
               <p className="text-gray-700 mb-6">

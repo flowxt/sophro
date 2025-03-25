@@ -37,9 +37,8 @@ export default function Constellations() {
                     Approche thérapeutique développée par le psychothérapeute
                     Allemand Bert HELLINGER dans les années 1990, les
                     constellations familiales permettent de mettre en lumière la
-                    manière dont un membre de la famille a lié son destin,
-                    inconsciemment, à un de ses ancêtres. On appelle ça
-                    l'intrication.
+                    manière dont un ancètre a lié son destin au vôtre,
+                    inconsciemment. On appelle ça l'intrication.
                   </p>
                   <p className="text-gray-700">
                     L'objectif est que la personne se libère en faisant exprimer

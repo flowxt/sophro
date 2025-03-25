@@ -82,7 +82,7 @@ export default function SophroAnalyse() {
                     </li>
                     <li className="flex items-start">
                       <span className="text-teal-600 mr-2">✓</span>
-                      <span>Retour à l'état normal et débriefing</span>
+                      <span>Retour à l'état normal</span>
                     </li>
                   </ul>
                 </div>

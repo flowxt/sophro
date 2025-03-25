@@ -60,3 +60,5 @@ export default function Hero() {
     </section>
   );
 }
+
+// #F9D1AB couleur
