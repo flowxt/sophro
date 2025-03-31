@@ -121,8 +121,8 @@ export default function PourQui() {
 
           <div className="mt-12 text-center">
             <p className="text-gray-500 italic">
-              * Cette liste n'est pas exhaustive. N'hésitez pas à me contacter
-              pour discuter de votre situation personnelle.
+              * Cette liste n&apos;est pas exhaustive. N&apos;hésitez pas à me
+              contacter pour discuter de votre situation personnelle.
             </p>
           </div>
         </motion.div>

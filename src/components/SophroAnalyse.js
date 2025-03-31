@@ -24,12 +24,12 @@ export default function SophroAnalyse() {
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div>
               <h3 className="text-2xl font-semibold mb-4 text-[#A45C40]">
-                Qu'est-ce que la Sophro-Analyse ?
+                Qu&apos;est-ce que la Sophro-Analyse ?
               </h3>
               <p className="text-gray-700 mb-4">
                 La Sophro-Analyse est une méthode qui vous permet de libérer
-                l'origine, la racine, de tous les scénarios limitants de votre
-                vie et d'en comprendre le sens.
+                l&apos;origine, la racine, de tous les scénarios limitants de
+                votre vie et d&apos;en comprendre le sens.
               </p>
               <p className="text-gray-700 mb-4">
                 Cette méthode fonctionne parce que votre âme est aux commandes.
@@ -39,7 +39,7 @@ export default function SophroAnalyse() {
               </p>
               <p className="text-gray-700 mb-4">
                 Chaque personne a sa propre carte du monde et ses propres
-                croyances. Les croyances, qu'elles soient positives ou
+                croyances. Les croyances, qu&apos;elles soient positives ou
                 limitantes, façonnent la réalité. La Sophro-analyse consiste à
                 transformer ces croyances limitantes.
               </p>
@@ -82,7 +82,7 @@ export default function SophroAnalyse() {
                     </li>
                     <li className="flex items-start">
                       <span className="text-[#F9D1AB] mr-2">✓</span>
-                      <span>Retour à l'état normal</span>
+                      <span>Retour à l&apos;état normal</span>
                     </li>
                   </ul>
                 </div>
