@@ -44,7 +44,7 @@ export default function Cabinet() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
               Mon Cabinet en Haute-Savoie
             </h2>
-            <div className="w-20 h-1 bg-teal-500 mx-auto mb-6"></div>
+            <div className="w-20 h-1 bg-[#F9D1AB] mx-auto mb-6"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Un espace chaleureux et accueillant à Allèves pour vous
               accompagner dans votre processus thérapeutique

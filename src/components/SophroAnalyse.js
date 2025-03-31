@@ -18,12 +18,12 @@ export default function SophroAnalyse() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
               La Sophro-Analyse
             </h2>
-            <div className="w-20 h-1 bg-teal-500 mx-auto"></div>
+            <div className="w-20 h-1 bg-[#F9D1AB] mx-auto"></div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div>
-              <h3 className="text-2xl font-semibold mb-4 text-teal-700">
+              <h3 className="text-2xl font-semibold mb-4 text-[#A45C40]">
                 Qu'est-ce que la Sophro-Analyse ?
               </h3>
               <p className="text-gray-700 mb-4">
@@ -51,37 +51,37 @@ export default function SophroAnalyse() {
             </div>
 
             <div className="relative rounded-lg overflow-hidden shadow-xl h-[400px]">
-              <div className="absolute inset-0 bg-teal-100"></div>
-              <div className="absolute inset-0 flex items-center justify-center text-teal-800">
+              <div className="absolute inset-0 bg-[#FDF6F0]"></div>
+              <div className="absolute inset-0 flex items-center justify-center text-[#A45C40]">
                 <div className="p-8 text-center">
                   <h4 className="text-xl font-semibold mb-4">
                     Comment se déroule une séance ?
                   </h4>
                   <ul className="text-left space-y-2">
                     <li className="flex items-start">
-                      <span className="text-teal-600 mr-2">✓</span>
+                      <span className="text-[#F9D1AB] mr-2">✓</span>
                       <span>
                         Entretien préliminaire pour définir vos besoins
                       </span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-teal-600 mr-2">✓</span>
+                      <span className="text-[#F9D1AB] mr-2">✓</span>
                       <span>État de relaxation profonde guidée</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-teal-600 mr-2">✓</span>
+                      <span className="text-[#F9D1AB] mr-2">✓</span>
                       <span>Accès aux mémoires et croyances limitantes</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-teal-600 mr-2">✓</span>
+                      <span className="text-[#F9D1AB] mr-2">✓</span>
                       <span>Libération émotionnelle</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-teal-600 mr-2">✓</span>
+                      <span className="text-[#F9D1AB] mr-2">✓</span>
                       <span>Compréhension et intégration</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-teal-600 mr-2">✓</span>
+                      <span className="text-[#F9D1AB] mr-2">✓</span>
                       <span>Retour à l'état normal</span>
                     </li>
                   </ul>

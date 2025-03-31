@@ -7,11 +7,12 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Arrière-plan avec effet de gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-teal-50 via-white to-blue-50"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-[#FDF6F0]/50 via-white to-[#FDF6F0]"></div>
 
       {/* Formes décoratives */}
-      <div className="absolute top-20 right-10 w-64 h-64 rounded-full bg-teal-100/30 blur-3xl"></div>
-      <div className="absolute bottom-10 left-10 w-72 h-72 rounded-full bg-blue-100/40 blur-3xl"></div>
+      <div className="absolute top-20 right-10 w-64 h-64 rounded-full bg-[#F9D1AB]/20 blur-3xl"></div>
+      <div className="absolute bottom-10 left-10 w-72 h-72 rounded-full bg-[#A45C40]/10 blur-3xl"></div>
+      <div className="absolute top-40 left-20 w-48 h-48 rounded-full bg-[#F9D1AB]/20 blur-2xl"></div>
 
       <div className="container mx-auto px-4 md:px-6 py-12 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
@@ -21,8 +22,8 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            Retrouvez votre <span className="text-teal-600">équilibre</span> et
-            votre <span className="text-teal-600">bien-être</span>
+            Retrouvez votre <span className="text-[#F9D1AB]">équilibre</span> et
+            votre <span className="text-[#F9D1AB]">bien-être</span>
           </motion.h1>
 
           <motion.p
@@ -44,13 +45,13 @@ export default function Hero() {
           >
             <Link
               href="#contact"
-              className="px-8 py-3 bg-teal-600 text-white rounded-full hover:bg-teal-700 transition-colors text-lg font-medium"
+              className="px-8 py-3 bg-[#F9D1AB] text-white rounded-full hover:bg-[#E5B78F] transition-colors text-lg font-medium"
             >
               Prendre rendez-vous
             </Link>
             <Link
               href="#approches"
-              className="px-8 py-3 bg-white text-teal-700 border border-teal-600 rounded-full hover:bg-teal-50 transition-colors text-lg font-medium"
+              className="px-8 py-3 bg-white text-[#A45C40] border border-[#F9D1AB] rounded-full hover:bg-[#FDF6F0] transition-colors text-lg font-medium"
             >
               Découvrir mes approches
             </Link>

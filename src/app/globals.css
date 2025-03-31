@@ -3,15 +3,15 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary: #0D9488;
-  --primary-light: #99F6E4;
-  --primary-dark: #0F766E;
-  --secondary: #0EA5E9;
-  --secondary-light: #BAE6FD;
-  --secondary-dark: #0369A1;
-  --accent: #8B5CF6;
-  --accent-light: #DDD6FE;
-  --accent-dark: #7C3AED;
+  --primary: #F9D1AB;
+  --primary-light: #FDF6F0;
+  --primary-dark: #E5B78F;
+  --secondary: #A45C40;
+  --secondary-light: #C38E77;
+  --secondary-dark: #7A432F;
+  --accent: #5F6F52;
+  --accent-light: #A8B79E;
+  --accent-dark: #45513C;
 }
 
 @theme inline {
@@ -48,11 +48,11 @@ body {
   }
   
   .btn-primary {
-    @apply inline-flex items-center justify-center px-6 py-3 bg-teal-600 text-white rounded-full font-medium transition-colors hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2;
+    @apply inline-flex items-center justify-center px-6 py-3 bg-[#F9D1AB] text-white rounded-full font-medium transition-colors hover:bg-[#E5B78F] focus:outline-none focus:ring-2 focus:ring-[#F9D1AB] focus:ring-offset-2;
   }
   
   .btn-secondary {
-    @apply inline-flex items-center justify-center px-6 py-3 bg-white text-teal-700 border border-teal-600 rounded-full font-medium transition-colors hover:bg-teal-50 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2;
+    @apply inline-flex items-center justify-center px-6 py-3 bg-white text-[#A45C40] border border-[#F9D1AB] rounded-full font-medium transition-colors hover:bg-[#FDF6F0] focus:outline-none focus:ring-2 focus:ring-[#F9D1AB] focus:ring-offset-2;
   }
   
   .section-title {
@@ -60,6 +60,6 @@ body {
   }
   
   .section-divider {
-    @apply w-20 h-1 bg-teal-500 mx-auto;
+    @apply w-20 h-1 bg-[#F9D1AB] mx-auto;
   }
 }

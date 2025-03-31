@@ -24,7 +24,7 @@ export default function Header() {
     >
       <div className="container mx-auto px-4 md:px-6 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="text-2xl font-bold text-teal-700">
+          <Link href="/" className="text-2xl font-bold text-[#A45C40]">
             Harmonie & Sens
           </Link>
 
@@ -32,25 +32,25 @@ export default function Header() {
           <nav className="hidden md:flex space-x-8">
             <Link
               href="#sophro-analyse"
-              className="text-gray-700 hover:text-teal-600 transition-colors"
+              className="text-gray-700 hover:text-[#F9D1AB] transition-colors"
             >
               Sophro-Analyse
             </Link>
             <Link
               href="#constellations"
-              className="text-gray-700 hover:text-teal-600 transition-colors"
+              className="text-gray-700 hover:text-[#F9D1AB] transition-colors"
             >
               Constellations
             </Link>
             <Link
               href="#magnetisme"
-              className="text-gray-700 hover:text-teal-600 transition-colors"
+              className="text-gray-700 hover:text-[#F9D1AB] transition-colors"
             >
               Magnétisme
             </Link>
             <Link
               href="#contact"
-              className="px-4 py-2 bg-teal-600 text-white rounded-full hover:bg-teal-700 transition-colors"
+              className="px-4 py-2 bg-[#F9D1AB] text-white rounded-full hover:bg-[#E5B78F] transition-colors"
             >
               Contact
             </Link>
@@ -100,28 +100,28 @@ export default function Header() {
           <nav className="md:hidden pt-4 pb-2 flex flex-col space-y-4">
             <Link
               href="#sophro-analyse"
-              className="text-gray-700 hover:text-teal-600 transition-colors"
+              className="text-gray-700 hover:text-[#F9D1AB] transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Sophro-Analyse
             </Link>
             <Link
               href="#constellations"
-              className="text-gray-700 hover:text-teal-600 transition-colors"
+              className="text-gray-700 hover:text-[#F9D1AB] transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Constellations
             </Link>
             <Link
               href="#magnetisme"
-              className="text-gray-700 hover:text-teal-600 transition-colors"
+              className="text-gray-700 hover:text-[#F9D1AB] transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Magnétisme
             </Link>
             <Link
               href="#contact"
-              className="px-4 py-2 bg-teal-600 text-white rounded-full hover:bg-teal-700 transition-colors inline-block"
+              className="px-4 py-2 bg-[#F9D1AB] text-white rounded-full hover:bg-[#E5B78F] transition-colors inline-block"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
