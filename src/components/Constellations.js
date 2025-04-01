@@ -4,7 +4,10 @@ import { motion } from "framer-motion";
 
 export default function Constellations() {
   return (
-    <section id="constellations" className="py-20 bg-[#FDF6F0]">
+    <section
+      id="constellations"
+      className="py-20 bg-[#FDF6F0] overflow-x-hidden"
+    >
       <div className="container mx-auto px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0 }}
@@ -36,16 +39,35 @@ export default function Constellations() {
               {/* Image décorative ou illustration */}
               <div className="md:w-2/5 bg-[#F9D1AB]/20 p-10 flex items-center justify-center">
                 <div className="w-32 h-32 rounded-full bg-[#F9D1AB]/30 flex items-center justify-center">
-                  <div className="w-24 h-24 rounded-full bg-[#F9D1AB] flex items-center justify-center text-white">
-                    <svg
+                  <motion.div
+                    className="w-24 h-24 rounded-full bg-[#F9D1AB] flex items-center justify-center text-white"
+                    animate={{
+                      scale: [1, 1.05, 1],
+                      rotate: [0, 3, -3, 0],
+                    }}
+                    transition={{
+                      duration: 1.5,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    }}
+                  >
+                    <motion.svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       fill="currentColor"
                       className="w-12 h-12"
+                      animate={{
+                        scale: [1, 1.1, 1],
+                      }}
+                      transition={{
+                        duration: 1.5,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                      }}
                     >
                       <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
-                    </svg>
-                  </div>
+                    </motion.svg>
+                  </motion.div>
                 </div>
               </div>
 

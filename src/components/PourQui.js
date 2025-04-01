@@ -98,7 +98,11 @@ export default function PourQui() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-xl shadow-md overflow-hidden"
+                whileHover={{
+                  scale: 1.02,
+                  transition: { duration: 0.2 },
+                }}
+                className="bg-white rounded-xl shadow-md overflow-hidden group"
               >
                 <div className="bg-[#F9D1AB] py-3 px-6">
                   <h3 className="text-lg font-semibold text-white">
@@ -108,10 +112,19 @@ export default function PourQui() {
                 <div className="p-6">
                   <ul className="space-y-2">
                     {categorie.items.map((item, itemIdx) => (
-                      <li key={itemIdx} className="flex items-start">
+                      <motion.li
+                        key={itemIdx}
+                        className="flex items-start group/item"
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.3, delay: itemIdx * 0.05 }}
+                        viewport={{ once: true }}
+                      >
                         <span className="text-[#F9D1AB] mr-2 mt-0.5">→</span>
-                        <span className="text-gray-700">{item}</span>
-                      </li>
+                        <span className="text-gray-700 group-hover/item:text-[#A45C40] transition-colors">
+                          {item}
+                        </span>
+                      </motion.li>
                     ))}
                   </ul>
                 </div>
@@ -119,12 +132,18 @@ export default function PourQui() {
             ))}
           </div>
 
-          <div className="mt-12 text-center">
+          <motion.div
+            className="mt-12 text-center"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
             <p className="text-gray-500 italic">
               * Cette liste n&apos;est pas exhaustive. N&apos;hésitez pas à me
               contacter pour discuter de votre situation personnelle.
             </p>
-          </div>
+          </motion.div>
         </motion.div>
       </div>
     </section>
