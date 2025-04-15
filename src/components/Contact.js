@@ -29,10 +29,28 @@ export default function Contact() {
     setLoading(true);
     setError("");
 
-    // Simulation d'envoi (à remplacer par un vrai service d'envoi d'emails)
     try {
-      // Ici, implémentez l'envoi réel du formulaire
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.nom,
+          email: formData.email,
+          phone: formData.telephone,
+          message: formData.message,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(
+          data.error || "Une erreur est survenue lors de l'envoi du message"
+        );
+      }
+
       setSuccess(true);
       setFormData({
         nom: "",
@@ -43,7 +61,8 @@ export default function Contact() {
       });
     } catch (err) {
       setError(
-        "Une erreur s'est produite lors de l'envoi du formulaire. Veuillez réessayer."
+        err.message ||
+          "Une erreur s'est produite lors de l'envoi du formulaire. Veuillez réessayer."
       );
     } finally {
       setLoading(false);

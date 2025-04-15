@@ -14,7 +14,7 @@ export default function Reservations() {
         "Exploration profonde pour identifier et transformer les croyances limitantes et les schémas inconscients.",
       couleur: "#F9D1AB",
       couleurFoncee: "#A45C40",
-      lien: "#", // À remplacer par le lien Calendly
+      lien: "https://calendly.com/harmonieetsens74/60min",
     },
     {
       titre: "Séance Magnétisme",
@@ -25,7 +25,7 @@ export default function Reservations() {
         "Séance énergétique pour favoriser l'équilibre et le bien-être physique et émotionnel.",
       couleur: "#BFD7EA",
       couleurFoncee: "#546D82",
-      lien: "#", // À remplacer par le lien Calendly
+      lien: "https://calendly.com/harmonieetsens74/magnetisme",
     },
     {
       titre: "Constellation Familiale",
@@ -36,7 +36,7 @@ export default function Reservations() {
         "Séance approfondie pour libérer les schémas familiaux et restaurer l'équilibre dans votre système.",
       couleur: "#FADCE4",
       couleurFoncee: "#F2BED1",
-      lien: "#", // À remplacer par le lien Calendly
+      lien: "https://calendly.com/harmonieetsens74/constellation",
     },
   ];
 
