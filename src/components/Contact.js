@@ -120,7 +120,7 @@ export default function Contact() {
                   <div>
                     <h4 className="font-medium text-gray-900 mb-1">Adresse</h4>
                     <p className="text-gray-700">
-                      417 route de Bange, 74540 ALLEVES
+                      417 route de Banges, 74540 ALLEVES
                     </p>
                   </div>
                 </div>
