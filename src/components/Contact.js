@@ -180,7 +180,7 @@ export default function Contact() {
                   <div>
                     <h4 className="font-medium text-gray-900 mb-1">Horaires</h4>
                     <p className="text-gray-700">
-                      Lundi - Vendredi : Voir calendrier de disponibilités
+                      Lundi - Vendredi : De 9h à 19h
                     </p>
                   </div>
                 </div>
