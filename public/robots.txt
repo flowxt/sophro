@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://harmonieetsens74.fr
+
+# Sitemaps
+Sitemap: https://harmonieetsens74.fr/sitemap.xml
