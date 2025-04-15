@@ -33,7 +33,7 @@ export const metadata = {
     title: "Sophro-Analyse & Thérapies en Haute-Savoie | Stéphanie Lassagne",
     description:
       "Thérapeute en Sophro-Analyse, Constellations Familiales et Magnétisme à Annecy et en Haute-Savoie. Accompagnement personnalisé pour retrouver équilibre et bien-être.",
-    url: "https://harmonie-et-sens.fr",
+    url: "https://harmonieetsens74.fr",
     siteName: "Harmonie & Sens - Thérapies en Haute-Savoie",
     locale: "fr_FR",
     type: "website",
@@ -43,9 +43,9 @@ export const metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "https://harmonie-et-sens.fr",
+    canonical: "https://harmonieetsens74.fr",
   },
-  metadataBase: new URL("https://harmonie-et-sens.fr"),
+  metadataBase: new URL("https://harmonieetsens74.fr"),
 };
 
 export default function RootLayout({ children }) {
