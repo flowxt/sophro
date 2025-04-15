@@ -208,116 +208,163 @@ export default function Contact() {
 
             {/* Formulaire de contact */}
             <div>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label
-                    htmlFor="nom"
-                    className="block text-sm font-medium text-gray-700 mb-1"
-                  >
-                    Nom complet *
-                  </label>
-                  <input
-                    type="text"
-                    id="nom"
-                    name="nom"
-                    value={formData.nom}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-teal-500 focus:border-teal-500"
-                    placeholder="Votre nom et prénom"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-medium text-gray-700 mb-1"
-                  >
-                    Email *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-teal-500 focus:border-teal-500"
-                    placeholder="votre.email@exemple.com"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="telephone"
-                    className="block text-sm font-medium text-gray-700 mb-1"
-                  >
-                    Téléphone
-                  </label>
-                  <input
-                    type="tel"
-                    id="telephone"
-                    name="telephone"
-                    value={formData.telephone}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-teal-500 focus:border-teal-500"
-                    placeholder="06 XX XX XX XX"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="message"
-                    className="block text-sm font-medium text-gray-700 mb-1"
-                  >
-                    Message *
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    rows={4}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-teal-500 focus:border-teal-500"
-                    placeholder="Précisez votre demande, vos disponibilités pour un rendez-vous à Annecy, ou toute question sur les thérapies proposées..."
-                  ></textarea>
-                </div>
-
-                <div className="flex items-start">
-                  <input
-                    type="checkbox"
-                    id="politique"
-                    name="politique"
-                    checked={formData.politique}
-                    onChange={handleChange}
-                    required
-                    className="mt-1 mr-2"
-                  />
-                  <label htmlFor="politique" className="text-sm text-gray-600">
-                    J&apos;accepte que mes données soient utilisées dans le
-                    strict cadre de ma demande de contact *
-                  </label>
-                </div>
-
-                {error && (
-                  <div className="bg-red-50 border border-red-200 text-red-700 p-3 rounded-lg">
-                    {error}
-                  </div>
-                )}
-
-                <button
-                  type="submit"
-                  className="w-full bg-[#F9D1AB] hover:bg-[#E5B78F] text-white py-3 px-6 rounded-full transition-colors font-medium"
-                  disabled={loading}
+              {success ? (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4 }}
+                  className="bg-green-50 border border-green-200 rounded-xl p-8 text-center"
                 >
-                  {loading ? "Envoi en cours..." : "Envoyer"}
-                </button>
+                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-8 w-8 text-green-600"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                    Message envoyé avec succès !
+                  </h3>
+                  <p className="text-gray-600 mb-4">
+                    Merci de m&apos;avoir contacté. Je vous répondrai dans les
+                    plus brefs délais, généralement sous 24 à 48 heures.
+                  </p>
+                  <p className="text-gray-600">
+                    N&apos;hésitez pas à consulter les options de réservation de
+                    séances disponibles{" "}
+                    <a
+                      href="#reservations"
+                      className="text-[#A45C40] hover:underline"
+                    >
+                      ici
+                    </a>
+                    .
+                  </p>
+                </motion.div>
+              ) : (
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div>
+                    <label
+                      htmlFor="nom"
+                      className="block text-sm font-medium text-gray-700 mb-1"
+                    >
+                      Nom complet *
+                    </label>
+                    <input
+                      type="text"
+                      id="nom"
+                      name="nom"
+                      value={formData.nom}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-teal-500 focus:border-teal-500"
+                      placeholder="Votre nom et prénom"
+                    />
+                  </div>
 
-                <p className="text-xs text-gray-500 mt-2">
-                  * Champs obligatoires
-                </p>
-              </form>
+                  <div>
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-medium text-gray-700 mb-1"
+                    >
+                      Email *
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-teal-500 focus:border-teal-500"
+                      placeholder="votre.email@exemple.com"
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      htmlFor="telephone"
+                      className="block text-sm font-medium text-gray-700 mb-1"
+                    >
+                      Téléphone
+                    </label>
+                    <input
+                      type="tel"
+                      id="telephone"
+                      name="telephone"
+                      value={formData.telephone}
+                      onChange={handleChange}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-teal-500 focus:border-teal-500"
+                      placeholder="06 XX XX XX XX"
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      htmlFor="message"
+                      className="block text-sm font-medium text-gray-700 mb-1"
+                    >
+                      Message *
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      required
+                      rows={4}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-teal-500 focus:border-teal-500"
+                      placeholder="Précisez votre demande, vos disponibilités pour un rendez-vous à Annecy, ou toute question sur les thérapies proposées..."
+                    ></textarea>
+                  </div>
+
+                  <div className="flex items-start">
+                    <input
+                      type="checkbox"
+                      id="politique"
+                      name="politique"
+                      checked={formData.politique}
+                      onChange={handleChange}
+                      required
+                      className="mt-1 mr-2"
+                    />
+                    <label
+                      htmlFor="politique"
+                      className="text-sm text-gray-600"
+                    >
+                      J&apos;accepte que mes données soient utilisées dans le
+                      strict cadre de ma demande de contact *
+                    </label>
+                  </div>
+
+                  {error && (
+                    <div className="bg-red-50 border border-red-200 text-red-700 p-3 rounded-lg">
+                      {error}
+                    </div>
+                  )}
+
+                  <button
+                    type="submit"
+                    className="w-full bg-[#F9D1AB] hover:bg-[#E5B78F] text-white py-3 px-6 rounded-full transition-colors font-medium"
+                    disabled={loading}
+                  >
+                    {loading ? "Envoi en cours..." : "Envoyer"}
+                  </button>
+
+                  <p className="text-xs text-gray-500 mt-2">
+                    * Champs obligatoires
+                  </p>
+                </form>
+              )}
             </div>
           </div>
         </motion.div>
