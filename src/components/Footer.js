@@ -36,8 +36,10 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
-                title="Facebook (bientôt disponible)"
+                href="https://www.facebook.com/profile.php?id=100079974558928"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Retrouvez-moi sur Facebook"
                 className="text-[#F9D1AB] hover:text-[#A45C40] transition-colors"
                 aria-label="Facebook"
               >
