@@ -101,7 +101,7 @@ export default function Contact() {
                   <div>
                     <h4 className="font-medium text-gray-900 mb-1">Adresse</h4>
                     <p className="text-gray-700">
-                      123 Rue de la Thérapie, 74000 Annecy
+                      417 route de Bange, 74540 ALLEVES
                     </p>
                   </div>
                 </div>
@@ -129,7 +129,7 @@ export default function Contact() {
                     <h4 className="font-medium text-gray-900 mb-1">
                       Téléphone
                     </h4>
-                    <p className="text-gray-700">+33 6 12 34 56 78</p>
+                    <p className="text-gray-700">+33 6 50 09 56 62</p>
                   </div>
                 </div>
 
@@ -154,7 +154,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-900 mb-1">Email</h4>
-                    <p className="text-gray-700">contact@harmonie-et-sens.fr</p>
+                    <p className="text-gray-700">harmonieetsens74@gmail.com</p>
                   </div>
                 </div>
 
@@ -180,9 +180,7 @@ export default function Contact() {
                   <div>
                     <h4 className="font-medium text-gray-900 mb-1">Horaires</h4>
                     <p className="text-gray-700">
-                      Lundi - Vendredi : 9h - 19h
-                      <br />
-                      Samedi : 9h - 12h
+                      Lundi - Vendredi : Voir calendrier de disponibilités
                     </p>
                   </div>
                 </div>

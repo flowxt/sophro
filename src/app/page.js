@@ -6,6 +6,7 @@ import Constellations from "@/components/Constellations";
 import Magnetisme from "@/components/Magnetisme";
 import PourQui from "@/components/PourQui";
 import Cabinet from "@/components/Cabinet";
+import Reservations from "@/components/Reservations";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -22,6 +23,7 @@ export default function Home() {
       </div>
       <PourQui />
       <Cabinet />
+      <Reservations />
       <Contact />
       <Footer />
     </main>

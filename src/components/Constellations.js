@@ -269,7 +269,7 @@ export default function Constellations() {
             className="mt-10 text-center"
           >
             <a
-              href="#contact"
+              href="#reservations"
               className="inline-block px-8 py-3 bg-[#F9D1AB] text-white rounded-full hover:bg-[#E5B78F] transition-colors text-lg font-medium"
             >
               Réserver une séance

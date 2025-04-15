@@ -24,6 +24,7 @@ export default function Header() {
         "pour-qui",
         "a-propos",
         "cabinet",
+        "reservations",
         "contact",
       ];
 
@@ -108,6 +109,7 @@ export default function Header() {
               { href: "#magnetisme", label: "Magnétisme" },
               { href: "#pour-qui", label: "Pour qui ?" },
               { href: "#a-propos", label: "À propos" },
+              { href: "#reservations", label: "Réservations" },
             ].map((item) => (
               <motion.div key={item.href} variants={itemVariants}>
                 <Link
@@ -205,6 +207,7 @@ export default function Header() {
                 { href: "#magnetisme", label: "Magnétisme" },
                 { href: "#pour-qui", label: "Pour qui ?" },
                 { href: "#a-propos", label: "À propos" },
+                { href: "#reservations", label: "Réservations" },
               ].map((item) => (
                 <Link
                   key={item.href}
