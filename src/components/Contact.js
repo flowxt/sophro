@@ -323,7 +323,7 @@ export default function Contact() {
                       required
                       rows={4}
                       className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-teal-500 focus:border-teal-500"
-                      placeholder="Précisez votre demande, vos disponibilités pour un rendez-vous à Annecy, ou toute question sur les thérapies proposées..."
+                      placeholder="Précisez votre demande, vos disponibilités pour un rendez-vous à Allèves, ou toute question sur les thérapies proposées..."
                     ></textarea>
                   </div>
 

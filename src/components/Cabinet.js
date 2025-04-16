@@ -14,7 +14,7 @@ export default function Cabinet() {
     },
     {
       src: "/images/cabinet2.jpg",
-      alt: "Salle de consultation pour Sophro-Analyse et thérapies à Annecy",
+      alt: "Salle de consultation pour Sophro-Analyse et thérapies à Allèves",
     },
     {
       src: "/images/cabinet3.jpg",
@@ -80,7 +80,7 @@ export default function Cabinet() {
 
           <div className="mt-12 text-center">
             <p className="text-gray-700">
-              Mon cabinet à Annecy vous accueille dans un espace de sérénité où
+              Mon cabinet à Allèves vous accueille dans un espace de sérénité où
               vous pourrez vous reconnecter à vous-même.
               <br />
               Prenez rendez-vous pour découvrir ce lieu dédié au bien-être et à
