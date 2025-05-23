@@ -13,26 +13,36 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Sophro-Analyse & Thérapies en Haute-Savoie | Stéphanie Lassagne",
+  title:
+    "Constellations Familiales, Sophro-Analyse, Magnétisme en Haute-Savoie | Annecy, Allèves",
   description:
-    "Thérapeute en Sophro-Analyse, Constellations Familiales et Magnétisme à Allèves et en Haute-Savoie. Accompagnement personnalisé pour retrouver équilibre et bien-être.",
+    "Thérapeute spécialiste en Constellations Familiales, Sophro-Analyse et Magnétisme à Allèves près d'Annecy et en Haute-Savoie (74). Séances individuelles pour libérer vos blocages et retrouver équilibre et bien-être.",
   keywords: [
-    "sophro-analyse Haute-Savoie",
-    "sophro-analyse Allèves",
-    "thérapeute Haute-Savoie",
+    "constellations familiales Haute-Savoie",
+    "constellations familiales Annecy",
     "constellations familiales Allèves",
+    "sophro-analyse Haute-Savoie",
+    "sophro-analyse Annecy",
+    "sophro-analyse Allèves",
     "magnétisme Haute-Savoie",
-    "bien-être proche de Annecy",
+    "magnétisme Annecy",
+    "magnétisme Allèves",
+    "thérapeute constellations familiales 74",
+    "thérapeute Haute-Savoie",
+    "thérapie brève Annecy",
     "thérapie brève Haute-Savoie",
     "Stéphanie Lassagne thérapeute",
     "thérapie holistique 74",
-    "équilibre émotionnel proche de Annecy",
+    "équilibre émotionnel Annecy",
     "accompagnement thérapeutique Haute-Savoie",
+    "bien-être Annecy",
+    "bien-être Haute-Savoie",
   ],
   openGraph: {
-    title: "Sophro-Analyse & Thérapies en Haute-Savoie | Stéphanie Lassagne",
+    title:
+      "Constellations Familiales, Sophro-Analyse, Magnétisme en Haute-Savoie | Annecy, Allèves",
     description:
-      "Thérapeute en Sophro-Analyse, Constellations Familiales et Magnétisme à Annecy et en Haute-Savoie. Accompagnement personnalisé pour retrouver équilibre et bien-être.",
+      "Thérapeute spécialiste en Constellations Familiales, Sophro-Analyse et Magnétisme à Allèves près d'Annecy et en Haute-Savoie (74). Séances individuelles pour libérer vos blocages et retrouver équilibre et bien-être.",
     url: "https://harmonieetsens74.fr",
     siteName: "Harmonie & Sens - Thérapies en Haute-Savoie",
     locale: "fr_FR",
@@ -105,6 +115,64 @@ export default function RootLayout({ children }) {
         />
         <link rel="manifest" href="/favicon/site.webmanifest" />
         <meta name="theme-color" content="#ffffff" />
+
+        {/* Schema.org structured data for LocalBusiness */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "@id": "https://harmonieetsens74.fr",
+              name: "Harmonie & Sens - Thérapies en Haute-Savoie",
+              description:
+                "Cabinet de thérapies douces à Allèves et Annecy en Haute-Savoie. Constellations Familiales, Sophro-Analyse et Magnétisme.",
+              url: "https://harmonieetsens74.fr",
+              telephone: "+33600000000",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Allèves",
+                addressLocality: "Allèves",
+                addressRegion: "Haute-Savoie",
+                postalCode: "74540",
+                addressCountry: "FR",
+              },
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: "45.7419",
+                longitude: "6.1036",
+              },
+              openingHoursSpecification: {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                ],
+                opens: "09:00",
+                closes: "19:00",
+              },
+              priceRange: "€€",
+              serviceArea: {
+                "@type": "GeoCircle",
+                geoMidpoint: {
+                  "@type": "GeoCoordinates",
+                  latitude: "45.899",
+                  longitude: "6.1294",
+                },
+                geoRadius: "30000",
+              },
+              servesCuisine: [
+                "Constellations Familiales",
+                "Sophro-Analyse",
+                "Magnétisme",
+                "Thérapies douces",
+              ],
+            }),
+          }}
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

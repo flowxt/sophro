@@ -56,8 +56,9 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            Retrouvez votre <span className="text-[#F9D1AB]">équilibre</span> et
-            votre <span className="text-[#A45C40]">bien-être</span>
+            Constellations Familiales, Sophro-Analyse et Magnétisme en{" "}
+            <span className="text-[#A45C40]">Haute-Savoie</span> |{" "}
+            <span className="text-[#f3a55c]">Annecy</span>
           </motion.h1>
 
           <motion.p
@@ -66,9 +67,11 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Thérapies douces en Haute-Savoie pour vous accompagner vers une vie
-            plus harmonieuse et équilibrée. Découvrez la Sophro-Analyse, les
-            Constellations Familiales et le Magnétisme.
+            Accompagnement thérapeutique à <strong>Allèves</strong> et{" "}
+            <strong>Annecy</strong> en <strong>Haute-Savoie</strong>.
+            Spécialiste en <strong>Constellations Familiales</strong>,{" "}
+            <strong>Sophro-Analyse</strong> et <strong>Magnétisme</strong>
+            pour vous aider à retrouver harmonie et équilibre dans votre vie.
           </motion.p>
 
           <motion.div

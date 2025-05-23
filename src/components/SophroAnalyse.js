@@ -16,7 +16,7 @@ export default function SophroAnalyse() {
         >
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-              La Sophro-Analyse
+              Sophro-Analyse à Allèves et Annecy en Haute-Savoie
             </h2>
             <div className="w-20 h-1 bg-[#F9D1AB] mx-auto"></div>
           </div>

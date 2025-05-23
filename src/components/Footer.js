@@ -224,14 +224,57 @@ export default function Footer() {
       <div className="bg-gray-800 py-6">
         <div className="container mx-auto px-4 md:px-6">
           <h4 className="text-sm text-gray-400 mb-3">
-            Zones desservies en Haute-Savoie :
+            Nos thérapies disponibles en Haute-Savoie :
           </h4>
+          <div className="flex flex-wrap gap-x-4 gap-y-2 mb-4">
+            <span className="text-xs text-gray-500">
+              <strong>Constellations Familiales</strong> à{" "}
+              {villesHauteSavoie.map((ville, index) => (
+                <span key={index}>
+                  <a
+                    href={`/#constellations`}
+                    className="text-gray-400 hover:text-[#F9D1AB]"
+                  >
+                    {ville}
+                  </a>
+                  {index < villesHauteSavoie.length - 1 ? ", " : ""}
+                </span>
+              ))}
+            </span>
+          </div>
+
+          <div className="flex flex-wrap gap-x-4 gap-y-2 mb-4">
+            <span className="text-xs text-gray-500">
+              <strong>Sophro-Analyse</strong> à{" "}
+              {villesHauteSavoie.map((ville, index) => (
+                <span key={index}>
+                  <a
+                    href={`/#sophro-analyse`}
+                    className="text-gray-400 hover:text-[#F9D1AB]"
+                  >
+                    {ville}
+                  </a>
+                  {index < villesHauteSavoie.length - 1 ? ", " : ""}
+                </span>
+              ))}
+            </span>
+          </div>
+
           <div className="flex flex-wrap gap-x-4 gap-y-2">
-            {villesHauteSavoie.map((ville, index) => (
-              <span key={index} className="text-xs text-gray-500">
-                {ville}
-              </span>
-            ))}
+            <span className="text-xs text-gray-500">
+              <strong>Magnétisme</strong> à{" "}
+              {villesHauteSavoie.map((ville, index) => (
+                <span key={index}>
+                  <a
+                    href={`/#magnetisme`}
+                    className="text-gray-400 hover:text-[#F9D1AB]"
+                  >
+                    {ville}
+                  </a>
+                  {index < villesHauteSavoie.length - 1 ? ", " : ""}
+                </span>
+              ))}
+            </span>
           </div>
         </div>
       </div>
