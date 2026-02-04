@@ -80,12 +80,13 @@ export default function PourQui() {
         >
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-              Pour qui sont ces thérapies ?
+              Thérapies Douces à Annecy : Pour Qui ?
             </h2>
             <div className="w-20 h-1 bg-[#F9D1AB] mx-auto mb-6"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Si vous vous reconnaissez dans un ou plusieurs de ces symptômes,
-              la Sophro-Analyse, les Constellations Familiales ou le Magnétisme
+              Si vous habitez Annecy, Allèves ou la Haute-Savoie (74) et vous
+              reconnaissez dans un ou plusieurs de ces symptômes, la
+              Sophro-Analyse, les Constellations Familiales ou le Magnétisme
               pourraient vous aider :
             </p>
           </div>

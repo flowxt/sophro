@@ -19,7 +19,7 @@ export default function APropos() {
         >
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-              À propos de Stéphanie
+              Stéphanie Lassagne - Votre Thérapeute à Annecy et en Haute-Savoie
             </h2>
             <div className="w-20 h-1 bg-[#F9D1AB] mx-auto mb-6"></div>
           </div>

@@ -42,12 +42,13 @@ export default function Cabinet() {
         >
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-              Mon Cabinet en Haute-Savoie
+              Cabinet de Thérapie à Allèves près d&apos;Annecy (Haute-Savoie)
             </h2>
             <div className="w-20 h-1 bg-[#F9D1AB] mx-auto mb-6"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Un espace chaleureux et accueillant à Allèves pour vous
-              accompagner dans votre processus thérapeutique
+              Un espace chaleureux et accueillant à Allèves, à 15 minutes
+              d&apos;Annecy, pour vous accompagner dans votre processus
+              thérapeutique
             </p>
           </div>
 

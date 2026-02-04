@@ -122,21 +122,32 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "LocalBusiness",
+              "@type": "HealthAndBeautyBusiness",
               "@id": "https://harmonieetsens74.fr",
-              name: "Harmonie & Sens - Thérapies en Haute-Savoie",
+              name: "Harmonie & Sens - Constellations Familiales, Sophro-Analyse et Magnétisme en Haute-Savoie",
+              alternateName: "Stéphanie Lassagne - Thérapeute Haute-Savoie",
               description:
-                "Cabinet de thérapies douces à Allèves et Annecy en Haute-Savoie. Constellations Familiales, Sophro-Analyse et Magnétisme.",
+                "Thérapeute spécialisée en Constellations Familiales, Sophro-Analyse et Magnétisme à Allèves et Annecy en Haute-Savoie (74). Séances individuelles pour libérer vos blocages émotionnels et retrouver équilibre et bien-être.",
               url: "https://harmonieetsens74.fr",
               telephone: "+33600000000",
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "Allèves",
-                addressLocality: "Allèves",
-                addressRegion: "Haute-Savoie",
-                postalCode: "74540",
-                addressCountry: "FR",
-              },
+              image: "https://harmonieetsens74.fr/images/cabinet.jpg",
+              address: [
+                {
+                  "@type": "PostalAddress",
+                  streetAddress: "Allèves",
+                  addressLocality: "Allèves",
+                  addressRegion: "Haute-Savoie",
+                  postalCode: "74540",
+                  addressCountry: "FR",
+                },
+                {
+                  "@type": "PostalAddress",
+                  addressLocality: "Annecy",
+                  addressRegion: "Haute-Savoie",
+                  postalCode: "74000",
+                  addressCountry: "FR",
+                },
+              ],
               geo: {
                 "@type": "GeoCoordinates",
                 latitude: "45.7419",
@@ -155,21 +166,56 @@ export default function RootLayout({ children }) {
                 closes: "19:00",
               },
               priceRange: "€€",
-              serviceArea: {
-                "@type": "GeoCircle",
-                geoMidpoint: {
-                  "@type": "GeoCoordinates",
-                  latitude: "45.899",
-                  longitude: "6.1294",
+              areaServed: [
+                {
+                  "@type": "City",
+                  name: "Annecy",
                 },
-                geoRadius: "30000",
-              },
-              servesCuisine: [
-                "Constellations Familiales",
-                "Sophro-Analyse",
-                "Magnétisme",
-                "Thérapies douces",
+                {
+                  "@type": "City",
+                  name: "Allèves",
+                },
+                {
+                  "@type": "State",
+                  name: "Haute-Savoie",
+                },
               ],
+              hasOfferCatalog: {
+                "@type": "OfferCatalog",
+                name: "Services thérapeutiques",
+                itemListElement: [
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Constellations Familiales",
+                      description:
+                        "Thérapie permettant de libérer les schémas familiaux inconscients et retrouver votre place dans votre système familial.",
+                      areaServed: "Haute-Savoie, Annecy, Allèves",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Sophro-Analyse",
+                      description:
+                        "Thérapie brève en relaxation pour libérer l'origine des scénarios limitants et transformer les croyances.",
+                      areaServed: "Haute-Savoie, Annecy, Allèves",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Magnétisme et Rééquilibrage Énergétique",
+                      description:
+                        "Soin énergétique par imposition des mains pour rééquilibrer le système énergétique et dissoudre les blocages.",
+                      areaServed: "Haute-Savoie, Annecy, Allèves",
+                    },
+                  },
+                ],
+              },
             }),
           }}
         />

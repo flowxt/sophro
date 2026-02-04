@@ -56,9 +56,12 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            Constellations Familiales, Sophro-Analyse et Magnétisme en{" "}
-            <span className="text-[#A45C40]">Haute-Savoie</span> |{" "}
-            <span className="text-[#f3a55c]">Annecy</span>
+            Thérapeute en{" "}
+            <span className="text-[#A45C40]">Constellations Familiales</span>,{" "}
+            <span className="text-[#A45C40]">Sophro-Analyse</span> et{" "}
+            <span className="text-[#A45C40]">Magnétisme</span> à{" "}
+            <span className="text-[#f3a55c]">Annecy</span> et en{" "}
+            <span className="text-[#f3a55c]">Haute-Savoie</span>
           </motion.h1>
 
           <motion.p
